@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	contractshttp "github.com/goravel/framework/contracts/http"
-	"github.com/goravel/framework/errors"
+	contractshttp "github.com/rusmanplatd/goravelframework/contracts/http"
+	"github.com/rusmanplatd/goravelframework/errors"
 )
 
 // Timeout creates middleware to set a timeout for a request

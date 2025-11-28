@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 
 	"github.com/gin-gonic/gin/render"
-	"github.com/goravel/framework/support/file"
-	"github.com/goravel/framework/support/path"
+	"github.com/rusmanplatd/goravelframework/support/file"
+	"github.com/rusmanplatd/goravelframework/support/path"
 )
 
 type Delims struct {

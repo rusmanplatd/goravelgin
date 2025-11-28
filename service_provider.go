@@ -1,12 +1,12 @@
 package gin
 
 import (
-	"github.com/goravel/framework/contracts/binding"
-	"github.com/goravel/framework/contracts/config"
-	"github.com/goravel/framework/contracts/foundation"
-	"github.com/goravel/framework/contracts/log"
-	"github.com/goravel/framework/contracts/validation"
-	"github.com/goravel/framework/contracts/view"
+	"github.com/rusmanplatd/goravelframework/contracts/binding"
+	"github.com/rusmanplatd/goravelframework/contracts/config"
+	"github.com/rusmanplatd/goravelframework/contracts/foundation"
+	"github.com/rusmanplatd/goravelframework/contracts/log"
+	"github.com/rusmanplatd/goravelframework/contracts/validation"
+	"github.com/rusmanplatd/goravelframework/contracts/view"
 )
 
 const BindingRoute = "goravel.gin.route"

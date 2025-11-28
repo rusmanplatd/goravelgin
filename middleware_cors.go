@@ -3,8 +3,8 @@ package gin
 import (
 	"strings"
 
-	"github.com/goravel/framework/contracts/http"
 	"github.com/rs/cors"
+	"github.com/rusmanplatd/goravelframework/contracts/http"
 )
 
 func Cors() http.Middleware {

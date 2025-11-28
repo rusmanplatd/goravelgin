@@ -3,7 +3,7 @@ package gin
 import (
 	"testing"
 
-	contractshttp "github.com/goravel/framework/contracts/http"
+	contractshttp "github.com/rusmanplatd/goravelframework/contracts/http"
 	"github.com/stretchr/testify/assert"
 )
 

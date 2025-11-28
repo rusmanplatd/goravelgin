@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	contractshttp "github.com/goravel/framework/contracts/http"
+	contractshttp "github.com/rusmanplatd/goravelframework/contracts/http"
 )
 
 type DataResponse struct {

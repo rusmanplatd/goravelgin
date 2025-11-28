@@ -5,9 +5,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	contractshttp "github.com/goravel/framework/contracts/http"
-	contractsroute "github.com/goravel/framework/contracts/route"
-	configmocks "github.com/goravel/framework/mocks/config"
+	contractshttp "github.com/rusmanplatd/goravelframework/contracts/http"
+	contractsroute "github.com/rusmanplatd/goravelframework/contracts/route"
+	configmocks "github.com/rusmanplatd/goravelframework/mocks/config"
 	"github.com/stretchr/testify/suite"
 )
 
@@ -51,7 +51,7 @@ func (s *GroupTestSuite) TestGet() {
 	s.assert("GET", "/input/1", http.StatusOK, "{\"id\":\"1\"}")
 	s.assert("HEAD", "/input/1", http.StatusOK, "{\"id\":\"1\"}")
 	s.Equal(contractshttp.Info{
-		Handler: "github.com/goravel/gin.(*GroupTestSuite).TestGet.func1",
+		Handler: "github.com/rusmanplatd/goravelgin.(*GroupTestSuite).TestGet.func1",
 		Method:  "GET|HEAD",
 		Path:    "/input/{id}",
 		Name:    "get",
@@ -67,7 +67,7 @@ func (s *GroupTestSuite) TestPost() {
 
 	s.assert("POST", "/input/1", http.StatusOK, "{\"id\":\"1\"}")
 	s.Equal(contractshttp.Info{
-		Handler: "github.com/goravel/gin.(*GroupTestSuite).TestPost.func1",
+		Handler: "github.com/rusmanplatd/goravelgin.(*GroupTestSuite).TestPost.func1",
 		Method:  contractshttp.MethodPost,
 		Path:    "/input/{id}",
 		Name:    "post",
@@ -83,7 +83,7 @@ func (s *GroupTestSuite) TestPut() {
 
 	s.assert("PUT", "/input/1", http.StatusOK, "{\"id\":\"1\"}")
 	s.Equal(contractshttp.Info{
-		Handler: "github.com/goravel/gin.(*GroupTestSuite).TestPut.func1",
+		Handler: "github.com/rusmanplatd/goravelgin.(*GroupTestSuite).TestPut.func1",
 		Method:  contractshttp.MethodPut,
 		Path:    "/input/{id}",
 		Name:    "put",
@@ -99,7 +99,7 @@ func (s *GroupTestSuite) TestDelete() {
 
 	s.assert("DELETE", "/input/1", http.StatusOK, "{\"id\":\"1\"}")
 	s.Equal(contractshttp.Info{
-		Handler: "github.com/goravel/gin.(*GroupTestSuite).TestDelete.func1",
+		Handler: "github.com/rusmanplatd/goravelgin.(*GroupTestSuite).TestDelete.func1",
 		Method:  contractshttp.MethodDelete,
 		Path:    "/input/{id}",
 		Name:    "delete",
@@ -115,7 +115,7 @@ func (s *GroupTestSuite) TestOptions() {
 
 	s.assert("OPTIONS", "/input/1", http.StatusOK, "{\"id\":\"1\"}")
 	s.Equal(contractshttp.Info{
-		Handler: "github.com/goravel/gin.(*GroupTestSuite).TestOptions.func1",
+		Handler: "github.com/rusmanplatd/goravelgin.(*GroupTestSuite).TestOptions.func1",
 		Method:  contractshttp.MethodOptions,
 		Path:    "/input/{id}",
 		Name:    "options",
@@ -131,7 +131,7 @@ func (s *GroupTestSuite) TestPatch() {
 
 	s.assert("PATCH", "/input/1", http.StatusOK, "{\"id\":\"1\"}")
 	s.Equal(contractshttp.Info{
-		Handler: "github.com/goravel/gin.(*GroupTestSuite).TestPatch.func1",
+		Handler: "github.com/rusmanplatd/goravelgin.(*GroupTestSuite).TestPatch.func1",
 		Method:  contractshttp.MethodPatch,
 		Path:    "/input/{id}",
 		Name:    "patch",
@@ -156,7 +156,7 @@ func (s *GroupTestSuite) TestAny() {
 	s.assert("OPTIONS", path, http.StatusOK, body)
 
 	s.Equal(contractshttp.Info{
-		Handler: "github.com/goravel/gin.(*GroupTestSuite).TestAny.func1",
+		Handler: "github.com/rusmanplatd/goravelgin.(*GroupTestSuite).TestAny.func1",
 		Method:  contractshttp.MethodAny,
 		Path:    "/input/{id}",
 		Name:    "any",
@@ -174,7 +174,7 @@ func (s *GroupTestSuite) TestResource() {
 	s.assert("DELETE", "/resource/1", http.StatusOK, "{\"action\":\"Destroy\",\"id\":\"1\"}")
 
 	s.Equal(contractshttp.Info{
-		Handler: "github.com/goravel/gin.(resourceController)",
+		Handler: "github.com/rusmanplatd/goravelgin.(resourceController)",
 		Method:  contractshttp.MethodResource,
 		Path:    "/resource",
 		Name:    "resource",

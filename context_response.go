@@ -6,8 +6,8 @@ import (
 	"sync"
 
 	"github.com/gin-gonic/gin"
-	contractshttp "github.com/goravel/framework/contracts/http"
-	"github.com/goravel/framework/support/carbon"
+	contractshttp "github.com/rusmanplatd/goravelframework/contracts/http"
+	"github.com/rusmanplatd/goravelframework/support/carbon"
 )
 
 var contextResponsePool = sync.Pool{New: func() any {

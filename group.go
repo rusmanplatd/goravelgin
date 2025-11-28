@@ -6,11 +6,11 @@ import (
 	"reflect"
 
 	"github.com/gin-gonic/gin"
-	"github.com/goravel/framework/contracts/config"
-	contractshttp "github.com/goravel/framework/contracts/http"
-	contractsroute "github.com/goravel/framework/contracts/route"
-	"github.com/goravel/framework/support/debug"
-	"github.com/goravel/framework/support/str"
+	"github.com/rusmanplatd/goravelframework/contracts/config"
+	contractshttp "github.com/rusmanplatd/goravelframework/contracts/http"
+	contractsroute "github.com/rusmanplatd/goravelframework/contracts/route"
+	"github.com/rusmanplatd/goravelframework/support/debug"
+	"github.com/rusmanplatd/goravelframework/support/str"
 )
 
 type Group struct {

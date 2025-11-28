@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/goravel/framework/support/file"
-	"github.com/goravel/framework/support/path"
+	"github.com/rusmanplatd/goravelframework/support/file"
+	"github.com/rusmanplatd/goravelframework/support/path"
 	"github.com/stretchr/testify/assert"
 )
 
